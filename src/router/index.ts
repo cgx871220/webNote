@@ -3,9 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import Vue from '../views/VueView.vue'
 import option from '@/views/vue/OptionView.vue'
 import composition from '@/views/vue/CompositionVue.vue'
-import VueRouter from '@/views/VueRouter.vue'
-import ComponentData from '@/views/ComponentData.vue'
-import Bootstrap from "@/views/BootstrapView.vue"
+// import VueRouter from '@/views/VueRouter.vue'
+// import ComponentData from '@/views/ComponentData.vue'
+// import Bootstrap from "@/views/BootstrapView.vue"
 
 
 
@@ -37,21 +37,21 @@ const router = createRouter({
         }
       ]
     },
-    {
-      path:'/vuerouter',
-      name:'vuerouter',
-      component:VueRouter
-    },
-    {
-      path:'/componentdata',
-      name:'component',
-      component:ComponentData
-    },
-    {
-      path:'/bootstrap',
-      name:'bootstrap',
-      component:Bootstrap
-    }
+    // {
+    //   path:'/vuerouter',
+    //   name:'vuerouter',
+    //   component:VueRouter
+    // },
+    // {
+    //   path:'/componentdata',
+    //   name:'component',
+    //   component:ComponentData
+    // },
+    // {
+    //   path:'/bootstrap',
+    //   name:'bootstrap',
+    //   component:Bootstrap
+    // }
   ]
 })
 

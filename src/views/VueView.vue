@@ -16,5 +16,3 @@
   </div>
 </template>
 
-<script>
-</script>
