@@ -2,7 +2,7 @@
     <h2 class="text-center">
         git
     </h2>
-    <p>
+    <div>
         git安裝網址:<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
         <hr>
         cmd基本使用:
@@ -39,7 +39,7 @@
                 git commit -m  "說明內容" →  描述新版本的commit內容
             </li>
         </ol>
-        git log  →  查詢版本
+        git log  →  查詢版本<br>
         git reset ＜版本號＞  →  前往選擇的commit
         <hr>
         分支操作:
@@ -71,7 +71,7 @@
         </ul>
         <hr>
         
-    </p>
+    </div>
 </template>
 
 
