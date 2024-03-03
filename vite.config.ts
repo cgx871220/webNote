@@ -9,7 +9,7 @@ export default defineConfig({
     vue(),
   ],
   //編譯出來的路徑
-  base:'/product',
+  base:'/webNote/dist',
   //網路配置
   server:{
     host:'0.0.0.0',

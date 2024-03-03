@@ -25,13 +25,33 @@
       </template>
     </ul>
   </div>
+
+
+
+
+  <!-- v-bind展示 -->
+  <div class="outline p-3">
+    <h4>v-bind語法</h4>
+      <img :src="url" :class="{'rotate':isTransform}" :style="imgStyle">
+      <button @click="isTransform = !isTransform" :class="['btn','btn-primary']">旋轉</button>
+  </div>
+
+
 </template>
 
 <script>
+
+
 export default {
   data() {
     return {
+      imgStyle:{
+        'height':'200px',
+        "margin-right":"10px"
+      },
+      isTransform:false,
       count: 0,
+      url:'https://picsum.photos/id/237/200/300',
       dataArray: [
         { id: 'a1', item: 'a001' },
         { id: 'a2', item: 'a002' },
@@ -44,6 +64,8 @@ export default {
       this.count++
     }
   },
+
+  //Computed
   computed: {
     //純getter寫法 
     // doubleCount() {
@@ -59,10 +81,40 @@ export default {
       }
     }
   },
+
+
+  //Watch
   watch: {
     count(newVal, oldVal) {
       console.log(`新值為:${newVal},舊值為:${oldVal}`)
     }
+  },
+
+
+  //常用生命週期
+  beforeCreate(){
+    console.log('beforeCreate')
+  },
+  created(){
+    console.log('created')
+  },
+  beforeMount(){
+    console.log('beforeMount')
+  },
+  mounted(){
+    console.log('mounted')
+  },
+  beforeUpdate(){
+    console.log('beforeUpdate')
+  },
+  updated(){
+    console.log('update')
+  },
+  beforeUnMount(){
+    console.log('beforeUnMount')
+  },
+  Unmounted(){
+    console.log('Unmounted')
   }
 }
 </script>
@@ -73,5 +125,10 @@ export default {
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 15px;
+}
+
+.rotate{
+  transform: rotate(10deg);
+  transition: transform .5s;
 }
 </style>

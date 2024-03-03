@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { RouterView, RouterLink } from 'vue-router'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
+
 </script>
 
 <template>
